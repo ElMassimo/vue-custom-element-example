@@ -1,0 +1,13 @@
+{
+  "name": "vue-custom-element-example",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "npm run package:build && npm run playground:build",
+    "playground:build": "npm -C playground run build",
+    "playground:dev": "npm -C playground run dev",
+    "package:build": "npm -C package run build",
+    "package:dev": "npm -C package run dev",
+    "publish": "npm -C package run publish"
+  }
+}
