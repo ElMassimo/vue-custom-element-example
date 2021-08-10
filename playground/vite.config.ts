@@ -8,7 +8,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      input: ['index.html', 'vue.html'],
+      input: ['index.html', 'vue.html', 'embed.html'],
     },
   },
   plugins: [

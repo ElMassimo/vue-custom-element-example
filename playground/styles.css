@@ -3,6 +3,7 @@ html {
 }
 
 html[loaded] {
+  background-color: white;
   transition: 0.3s ease;
   transition-property: color, background-color;
 }
@@ -10,6 +11,10 @@ html[loaded] {
 html.dark {
   background-color: #3c3c3c;
   color: white;
+}
+
+h1 {
+  margin-top: 20vh;
 }
 
 p {
@@ -23,10 +28,13 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding-top: 20vh;
 }
 
 dark-mode-switch {
   --font-size: 48px;
   margin: 1rem auto;
+}
+
+dark-mode-switch:first-child {
+  margin: 4rem auto;
 }
