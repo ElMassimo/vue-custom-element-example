@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 3 Custom Element Demo</title>
+    <script>
+      const prefersDark = matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      const html = document.documentElement
+      html.classList.toggle('dark', setting === 'dark' || (prefersDark && setting !== 'light'))
+      setTimeout(() => html.setAttribute('loaded', ''), 200)
+    </script>
+  </head>
+  <body>
+    <h1>Custom Element Demo</h1>
+    <dark-mode-switch></dark-mode-switch>
+    <p><code>defineCustomElement(DarkModeSwitch)</code></p>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>
