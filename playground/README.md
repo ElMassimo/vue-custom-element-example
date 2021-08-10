@@ -4,7 +4,7 @@
 [vue demo]: https://vue-custom-element-example.netlify.app/vue.html
 [registered manually]: https://github.com/ElMassimo/vue-custom-element-example/blob/main/playground/main.ts#L5
 [within a Vue component]: https://github.com/ElMassimo/vue-custom-element-example/blob/main/playground/App.vue#L3
-[additional configuration]: https://github.com/ElMassimo/vue-custom-element-example/blob/main/playground/vite.config.ts#L13
+[additional configuration]: https://github.com/ElMassimo/vue-custom-element-example/blob/main/playground/vite.config.ts#L18
 
 # Vue 3 Custom Element Demo
 
