@@ -2,7 +2,7 @@
 [custom element]: https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements
 [demo]: https://vue-custom-element-example.netlify.app
 
-# Vue 3 Custom Element Demo
+# Vue 3 Custom Elements as a Library
 
 This package is an example on how to package a [custom element] by using the [`defineCustomElement`][defineCustomElement] API in Vue 3.
 

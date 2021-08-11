@@ -6,7 +6,7 @@
 [within a Vue component]: https://github.com/ElMassimo/vue-custom-element-example/blob/main/playground/App.vue#L3
 [additional configuration]: https://github.com/ElMassimo/vue-custom-element-example/blob/main/playground/vite.config.ts#L18
 
-# Vue 3 Custom Element Demo
+# Using Custom Elements defined with Vue 3
 
 This playground is an example on how to use a [custom element] that was defined using the [`defineCustomElement`][defineCustomElement] API in Vue 3.
 
