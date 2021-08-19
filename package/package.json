@@ -1,6 +1,6 @@
 {
   "name": "@mussi/vue-custom-element-example",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "dev": "vite build --watch",
     "check": "vue-tsc --noEmit",
@@ -9,7 +9,8 @@
     "prepublishOnly": "npm run check && npm run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "types": "dist/index.d.ts",
   "main": "dist/index.umd.js",
@@ -34,6 +35,7 @@
     "tslib": "^2.3.0",
     "typescript": "^4.3.5",
     "vite": "^2.5.0-beta.2",
+    "vite-dts": "^1.0.3",
     "vite-plugin-components": "^0.13.2",
     "vite-plugin-icons": "^0.6.5",
     "vue": "^3.2.1",

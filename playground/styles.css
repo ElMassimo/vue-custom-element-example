@@ -38,3 +38,10 @@ dark-mode-switch {
 dark-mode-switch:first-child {
   margin: 4rem auto;
 }
+
+@media (min-height: 600px) {
+  github-link {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
