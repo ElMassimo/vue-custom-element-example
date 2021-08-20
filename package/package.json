@@ -1,24 +1,22 @@
 {
   "name": "@mussi/vue-custom-element-example",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "scripts": {
     "dev": "vite build --watch",
     "check": "vue-tsc --noEmit",
     "build": "vite build",
-    "publish": "npm publish",
     "prepublishOnly": "npm run check && npm run build"
   },
   "files": [
     "dist",
     "src"
   ],
-  "types": "dist/index.d.ts",
-  "main": "dist/index.umd.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "require": "./dist/index.cjs.js"
     }
   },
   "peerDependencies": {

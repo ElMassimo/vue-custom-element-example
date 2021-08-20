@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: ['index.html', 'vue.html', 'embed.html'],
     },
+    sourcemap: true,
   },
   plugins: [
     vue({
