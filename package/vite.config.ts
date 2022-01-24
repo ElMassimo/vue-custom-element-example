@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
-import icons, { ViteIconsResolver } from 'vite-plugin-icons'
-import components from 'vite-plugin-components'
+import icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import components from 'unplugin-vue-components/vite'
 import dts from 'vite-dts'
 
 export default defineConfig({
@@ -25,13 +26,13 @@ export default defineConfig({
   plugins: [
     dts(),
     components({
-      customComponentResolvers: ViteIconsResolver({ componentPrefix: '' }),
+      resolvers: [IconsResolver({ componentPrefix: '' })],
     }),
-    icons(),
+    icons({
+      autoInstall: true,
+    }),
     vue({
-      script: {
-        refSugar: true,
-      },
+      reactivityTransform: true,
     }),
   ]
 })
