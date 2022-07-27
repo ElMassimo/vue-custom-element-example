@@ -4,14 +4,14 @@ import vue from '@vitejs/plugin-vue'
 import icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import components from 'unplugin-vue-components/vite'
-import dts from 'vite-dts'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      formats: ['es', 'cjs'],
-      fileName: format => `index.${format}.js`
+      formats: ['es'],
+      fileName: 'index',
     },
     rollupOptions: {
       // Externalize deps that shouldn't be bundled into the library.

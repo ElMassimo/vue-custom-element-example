@@ -11,31 +11,31 @@
     "dist",
     "src"
   ],
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
-    }
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
   },
   "peerDependencies": {
     "@vueuse/core": "^5",
-    "vue": "^3.2.19"
+    "vue": "^3.2"
   },
   "devDependencies": {
-    "@iconify-json/ic": "^1.0.8",
-    "@iconify-json/mdi": "^1.0.13",
-    "@types/node": "^16.11.21",
+    "@iconify-json/ic": "^1.1.7",
+    "@iconify-json/mdi": "^1.1.29",
+    "@types/node": "^16.11.45",
     "@vitejs/plugin-vue": "*",
-    "@vueuse/core": "^5.3.0",
-    "tslib": "^2.3.1",
-    "typescript": "^4.5.5",
+    "@vueuse/core": "^9.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
     "unplugin-icons": "*",
     "unplugin-vue-components": "*",
-    "vite": "^2.8.0-beta.3",
-    "vite-dts": "^1.0.4",
-    "vue": "^3.2.29",
-    "vue-tsc": "^0.2.3"
+    "vite": "^3.0.3",
+    "vite-plugin-dts": "^1.4.0",
+    "vue": "^3.2.37",
+    "vue-tsc": "^0.39.0"
   }
 }

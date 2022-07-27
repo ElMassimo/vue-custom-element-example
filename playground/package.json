@@ -3,18 +3,19 @@
   "private": true,
   "scripts": {
     "dev": "vite --open",
-    "check": "vue-tsc --noEmit",
+    "tsc": "vue-tsc --noEmit",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
     "@mussi/vue-custom-element-example": "workspace:*",
     "@vueuse/core": "*",
-    "vue": "^3.2.29"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "*",
     "@vue/compiler-sfc": "*",
+    "@vue/tsconfig": "^0.1.3",
     "typescript": "*",
     "vite": "*",
     "vue-tsc": "*"
