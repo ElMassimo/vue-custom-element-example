@@ -1,6 +1,6 @@
 {
   "name": "@mussi/vue-custom-element-example",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "dev": "vite build --watch",
     "check": "vue-tsc --noEmit",
