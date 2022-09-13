@@ -9,13 +9,23 @@ export default class extends Controller {
     return { index: Number }
   }
 
-  slides = [
-    '🐵',
-    '🙈',
-    '🙉',
-    '🙊',
-    // 'THE END',
-  ]
+
+
+
+  emojis = ['🐵', '🙈', '🙉', '🙊']
+
+  showCurrentEmoji () {
+    this.slidesTarget.innerText =
+      this.emojis[this.indexValue] || '💥'
+  }
+  
+  get isPreviousDisabled () {
+    return this.indexValue <= 0
+  }
+
+  get isNextDisabled () {
+    return this.indexValue >= this.emojis.length - 1
+  }
 
   next () {
     this.indexValue++
@@ -25,26 +35,27 @@ export default class extends Controller {
     this.indexValue--
   }
 
-  indexValueChanged () {
-    this.showCurrentSlide()
-    this.checkBoundaries()
-  }
-
-  showCurrentSlide () {
-    this.slidesTarget.innerText = this.slides[this.indexValue]
-  }
-
-  checkBoundaries () {
-    this.previousButtonTarget.toggleAttribute('disabled', this.indexValue <= 0)
-    this.nextButtonTarget.toggleAttribute('disabled', this.indexValue >= this.maxIndex)
+  disableButtonsOnBoundaries () {
+    this.previousButtonTarget.toggleAttribute('disabled', this.isPreviousDisabled)
+    this.nextButtonTarget.toggleAttribute('disabled', this.isNextDisabled)
   }
 
   connect () {
-    this.showCurrentSlide()
+    this.showCurrentEmoji()
     this.indexValue = Math.min(Math.max(this.indexValue, 0), this.maxIndex)
   }
 
+  disconnect () {
+    this.previousButtonTarget.toggleAttribute('disabled', false)
+    this.nextButtonTarget.toggleAttribute('disabled', false)
+  }
+
+  indexValueChanged () {
+    this.showCurrentEmoji()
+    this.disableButtonsOnBoundaries()
+  }
+
   get maxIndex () {
-    return this.slides.length - 1
+    return this.emojis.length - 1
   }
 }

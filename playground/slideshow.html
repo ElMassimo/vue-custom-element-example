@@ -7,13 +7,12 @@
     <title>Stimulus Slideshow HMR</title>
   </head>
   <body>
-    <flex-col data-controller="slideshow" data-slideshow-index-value="1">
+    <flex-col data-controller="slideshow" data-slideshow-index-value="0">
+      <flex data-slideshow-target="slides" style="font-size: 48px">
+      </flex>
       <flex>
         <button data-slideshow-target="previousButton" data-action="slideshow#previous">←</button>
         <button data-slideshow-target="nextButton" data-action="slideshow#next">→</button>
-      </flex>
-
-      <flex data-slideshow-target="slides">
       </flex>
     </flex-col>
     <script type="module" src="/stimulus.ts"></script>
