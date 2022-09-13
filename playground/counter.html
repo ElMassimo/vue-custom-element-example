@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stimulus Counter HMR</title>
+  </head>
+  <body>
+    <flex-col data-controller="counter" data-counter-count-value="1" data-counter-min-value="0" data-counter-max-value="3">
+      <flex>
+        <button data-counter-target="decrementButton" data-action="counter#decrement">−</button>
+        <button data-counter-target="incrementButton" data-action="counter#increment">+</button>
+      </flex>
+
+      <counter data-counter-target="currentCount"></counter>
+    </flex-col>
+
+    <script type="module" src="/stimulus.ts"></script>
+  </body>
+</html>

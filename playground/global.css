@@ -1,0 +1,61 @@
+:root {
+  --color: #fef3c7;
+  --color-disabled: #6c6858;
+  --bg-normal: #262626;
+  --bg-active: #2d2d2d;
+  --bg-disabled: #2F2F2F;
+  --font-size: 24px;
+}
+
+body {
+  font-size: var(--font-size);
+  font-weight: bold;
+  margin: 4rem auto;
+  font-family: 'Fira Code';
+}
+
+* {
+  font: inherit;
+}
+
+flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+flex-col {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+counter {
+  font-size: 24px;
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-normal);
+  border: none;
+  border-radius: .5rem;
+  color: var(--color);
+  cursor: pointer;
+  display: inline-flex;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  padding: 0.4em;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+button:active {
+  background-color: var(--bg-active);
+  outline: none;
+}
+
+button:disabled {
+  background-color: var(--bg-disabled);
+  color: var(--color-disabled);
+}

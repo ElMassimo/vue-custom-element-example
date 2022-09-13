@@ -14,6 +14,13 @@
     </script>
   </head>
   <body style="margin: 4rem auto;">
+    <h2>Counter</h2>
+    <div data-controller="counter" data-counter-count-value="1">
+      <button data-action="counter#decrement"> - </button>
+      <button data-action="counter#increment"> + </button>
+
+      <div data-counter-target="currentCount"></div>
+    </div>
     <span data-controller="tippy">
       <dark-mode-switch></dark-mode-switch>
     </span>

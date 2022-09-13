@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stimulus Slideshow HMR</title>
+  </head>
+  <body>
+    <flex-col data-controller="slideshow" data-slideshow-index-value="1">
+      <flex>
+        <button data-slideshow-target="previousButton" data-action="slideshow#previous">←</button>
+        <button data-slideshow-target="nextButton" data-action="slideshow#next">→</button>
+      </flex>
+
+      <flex data-slideshow-target="slides">
+      </flex>
+    </flex-col>
+    <script type="module" src="/stimulus.ts"></script>
+  </body>
+</html>
