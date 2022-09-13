@@ -3,7 +3,16 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      '@hotwired/stimulus': ^3.1.0
+      stimulus-vite-helpers: ^3.0.1
+      tippy.js: ^6.3.7
+      vite-plugin-stimulus-hmr: ^3.0.0
+    devDependencies:
+      '@hotwired/stimulus': 3.1.0
+      stimulus-vite-helpers: 3.0.1
+      tippy.js: 6.3.7
+      vite-plugin-stimulus-hmr: 3.0.0
 
   package:
     specifiers:
@@ -88,6 +97,10 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': 7.18.6
       to-fast-properties: 2.0.0
+
+  /@hotwired/stimulus/3.1.0:
+    resolution: {integrity: sha512-iDMHUhiEJ1xFeicyHcZQQgBzhtk5mPR0QZO3L6wtqzMsJEk2TKECuCQTGKjm+KJTHVY0dKq1dOOAWvODjpd2Mg==}
+    dev: true
 
   /@iconify-json/ic/1.1.7:
     resolution: {integrity: sha512-CYwkhja02SZoevezNHSqM7d1lpsRJxKt9fzvn3MpRxI8s2v3LNmhGiD/bTq3uFgqQMRPp+OnD+OOjHrMo7ah1g==}
@@ -176,6 +189,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: true
 
   /@rollup/pluginutils/4.2.1:
@@ -1179,6 +1196,10 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
 
+  /stimulus-vite-helpers/3.0.1:
+    resolution: {integrity: sha512-v8vii8wTyzbH5REE3Z6DbtKqnXEuEQ3ylYs4jQRmLAQrH9vlii7p98MG8gIii1anEEPmnBB1JWWvxKXGZh7apQ==}
+    dev: true
+
   /string-argv/0.3.1:
     resolution: {integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==}
     engines: {node: '>=0.6.19'}
@@ -1208,6 +1229,12 @@ packages:
 
   /timsort/0.3.0:
     resolution: {integrity: sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==}
+    dev: true
+
+  /tippy.js/6.3.7:
+    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
+    dependencies:
+      '@popperjs/core': 2.11.6
     dev: true
 
   /to-fast-properties/2.0.0:
@@ -1364,6 +1391,15 @@ packages:
       fs-extra: 10.1.0
       ts-morph: 14.0.0
       vite: 3.0.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vite-plugin-stimulus-hmr/3.0.0:
+    resolution: {integrity: sha512-KElOiZOlaG4XilQQHrzK8M1u5UfK4EFfADJKQYbnmsUMifDOnPR6anVYgHAN95QyWJ67Q/rYWe5BB9M5OxocfQ==}
+    dependencies:
+      debug: 4.3.4
+      stimulus-vite-helpers: 3.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true

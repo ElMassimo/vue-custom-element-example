@@ -13,8 +13,11 @@
       setTimeout(() => html.setAttribute('loaded', ''), 200)
     </script>
   </head>
-  <body>
-    <dark-mode-switch></dark-mode-switch>
+  <body style="margin: 4rem auto;">
+    <span data-controller="tippy">
+      <dark-mode-switch></dark-mode-switch>
+    </span>
     <script type="module" src="/main.ts"></script>
+    <script type="module" src="/stimulus.ts"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import stimulus from 'vite-plugin-stimulus-hmr'
 
 export default defineConfig({
   define: {
@@ -13,6 +14,7 @@ export default defineConfig({
     sourcemap: true,
   },
   plugins: [
+    stimulus(),
     vue({
       template: {
         compilerOptions: {

@@ -1,0 +1,15 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/maximomussini/Projects/vue-custom-element-example"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_ADDING_TO_ROOT",
+    "err": {
+      "name": "pnpm",
+      "message": "Running this command will add the dependency to the workspace root, which might not be what you want - if you really meant it, make it explicit by running this command again with the -w flag (or --workspace-root). If you don't want to see this warning anymore, you may set the ignore-workspace-root-check setting to true.",
+      "code": "ERR_PNPM_ADDING_TO_ROOT",
+      "stack": "pnpm: Running this command will add the dependency to the workspace root, which might not be what you want - if you really meant it, make it explicit by running this command again with the -w flag (or --workspace-root). If you don't want to see this warning anymore, you may set the ignore-workspace-root-check setting to true.\n    at Object.handler [as add] (/Users/maximomussini/Library/pnpm/global/5/.pnpm/pnpm@7.4.1/node_modules/pnpm/dist/pnpm.cjs:127891:15)\n    at /Users/maximomussini/Library/pnpm/global/5/.pnpm/pnpm@7.4.1/node_modules/pnpm/dist/pnpm.cjs:192577:51\n    at async run (/Users/maximomussini/Library/pnpm/global/5/.pnpm/pnpm@7.4.1/node_modules/pnpm/dist/pnpm.cjs:192553:34)\n    at async runPnpm (/Users/maximomussini/Library/pnpm/global/5/.pnpm/pnpm@7.4.1/node_modules/pnpm/dist/pnpm.cjs:192771:5)\n    at async /Users/maximomussini/Library/pnpm/global/5/.pnpm/pnpm@7.4.1/node_modules/pnpm/dist/pnpm.cjs:192763:7"
+    }
+  }
+}

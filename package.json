@@ -9,5 +9,11 @@
     "package:build": "npm -C package run build",
     "package:dev": "npm -C package run dev",
     "publish": "npm -C package run publish"
+  },
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.1.0",
+    "stimulus-vite-helpers": "^3.0.1",
+    "tippy.js": "^6.3.7",
+    "vite-plugin-stimulus-hmr": "^3.0.0"
   }
 }
