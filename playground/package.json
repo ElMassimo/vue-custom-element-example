@@ -10,9 +10,12 @@
   "dependencies": {
     "@mussi/vue-custom-element-example": "workspace:*",
     "@vueuse/core": "*",
+    "unplugin-icons": "*",
+    "unplugin-vue-components": "*",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@iconify-json/noto": "^1.1.3",
     "@vitejs/plugin-vue": "*",
     "@vue/compiler-sfc": "*",
     "@vue/tsconfig": "^0.1.3",

@@ -1,13 +1,15 @@
 <template>
-  <h1>Custom Element Demo</h1>
-  <dark-mode-switch></dark-mode-switch>
-  <p><code>defineCustomElement(DarkModeSwitch)</code></p>
+  <DarkModeSwitch></DarkModeSwitch>
 </template>
 
 <style>
+
+
 main {
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  height: 100%;
 }
 </style>

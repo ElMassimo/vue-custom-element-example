@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript HMR</title>
+  </head>
+  <body style="display: grid; place-items: center;">
+    <flex-col data-controller="fruits" data-fruits-index-value="0">
+      <flex-col data-fruits-target="fruitsList" style="font-size: 48px">
+      </flex-col>
+    </flex-col>
+  </body>
+  <script type="module" src="/stimulus.ts"></script>
+  <style>
+    li::marker {
+      color: rgba(200, 200, 200, 0.5);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    .emoji {
+      margin-right: 1rem;
+    }
+
+    .label {
+      font-size: 32px;
+    }
+  </style>
+</html>

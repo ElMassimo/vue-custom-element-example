@@ -1,0 +1,90 @@
+
+  button {
+    font-size: 36px;
+
+    outline: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+but {
+    background: #666;
+    border-radius: 0.3em;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5em 1em;
+
+    &:hover {
+      background: #555;
+    }
+
+    &:active {
+      background: #444;
+    }
+  }
+
+
+
+  button {
+    --bg: rgba(62,62,62);
+    background: var(--bg);
+    --radius: 0em;
+    border-radius: var(--radius);
+    color: var(--bg);
+    padding: 1em;
+    border-style: none;
+    box-shadow: 1px 1px 1px #00000044;
+  }
+
+
+
+  button {
+    --bg: #6d28d9;
+    --radius: 0.3em;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+but {
+    background: #666;
+    border-radius: 0.3em;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import stimulus from 'vite-plugin-stimulus-hmr'
+import icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
   define: {
@@ -21,6 +24,13 @@ export default defineConfig({
           isCustomElement: (tagName) => tagName.includes('-')
         }
       }
-    })
+    }),
+    components({
+      dirs: process.cwd(),
+      resolvers: [IconsResolver({ componentPrefix: '' })],
+    }),
+    icons({
+      autoInstall: true,
+    }),
   ],
 })
