@@ -13,11 +13,6 @@ export default class extends Controller {
 
 
   emojis = ['🐵', '🙈', '🙉', '🙊']
-
-  showCurrentEmoji () {
-    this.slidesTarget.innerText =
-      this.emojis[this.indexValue] || '💥'
-  }
   
   get isPreviousDisabled () {
     return this.indexValue <= 0
@@ -25,6 +20,11 @@ export default class extends Controller {
 
   get isNextDisabled () {
     return this.indexValue >= this.emojis.length - 1
+  }
+
+  showCurrentEmoji () {
+    this.slidesTarget.innerText =
+      this.emojis[this.indexValue] || '💥'
   }
 
   next () {
